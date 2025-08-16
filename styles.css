@@ -115,7 +115,45 @@
 }
 
 
+.skills-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
 
+.skills-icons-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 49%);
+    width: 175px;
+    height: 125px;
+    border-radius: 15px;
+}
+
+.skills-icons-div:hover{
+    background-color: hsl(0, 0%, 39%);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 15px lch(77.07% 17.87 215.83);
+}
+
+.skill-name{
+    padding: 0;
+    margin: 0;
+    font-family: "Archivo Black", sans-serif;
+    color: #fefefd;
+}
+
+.skills-icons{
+    height: 55px;
+    align-items: center;
+}
 
 
 
