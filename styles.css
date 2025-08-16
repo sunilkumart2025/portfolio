@@ -1,6 +1,118 @@
 
+.header{
+    display: flex;
+    align-items: center;
+    background-color: hsl(99, 33%, 21%);
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
 
+.heading{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 87.1;
+    color: #fefefd;
+    margin-left: 25px;
+}
 
+.kumar{
+    color: hsl(60, 100%, 50%);
+    padding-left: 5px;
+}
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 450px;
+    background-color: hsl(99, 33%, 21%);
+}
+
+.profile-picture-div{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.profile-picture{
+    border-radius: 195px;
+    max-height: 300px;
+    margin-top: 75px;
+    border-color: #fff200;
+    border-width: 5px;
+    border-style: solid;  
+    box-shadow: 0 0 15px lab(56.14% 63.72 66.43);  
+}
+
+.profile-picture:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 25px lab(56.14% 63.72 66.43);  
+
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.greeting{
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fefefd;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.name{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fefefd;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.field-of-study{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    float: left;
+    font-size: 35px;
+    color: #fefefd;
+    font-weight: bold;
+    padding-bottom: 0px;
+    line-height: 70px;
+    padding-top: 15px;;
+}
+
+.sayhello{
+    background-color: #9929fb;
+    color:#fefefd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .5s;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.sayhello:hover{
+    background-color: #fefefd;
+    color: #9929fb;
+    border: 2px solid #9929fb;
+}
 
 
 
