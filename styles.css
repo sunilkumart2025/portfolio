@@ -1,4 +1,3 @@
-
 .header{
     display: flex;
     align-items: center;
@@ -131,14 +130,14 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-color: hsl(0, 0%, 49%);
-    width: 175px;
+    background-color: hwb(0 80% 19%);
+    width: 155px;
     height: 125px;
     border-radius: 15px;
 }
 
 .skills-icons-div:hover{
-    background-color: hsl(0, 0%, 39%);
+    background-color: hwb(0 56% 42%);
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 15px lch(77.07% 17.87 215.83);
 }
@@ -148,11 +147,47 @@
     margin: 0;
     font-family: "Archivo Black", sans-serif;
     color: #fefefd;
+    padding-top: 5px;
 }
 
 .skills-icons{
     height: 55px;
     align-items: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.tech-icons{
+    width: auto;
+    max-width: 350px;;
+    align-items: center;
+    border-radius: 25px;
+    margin-left: 12.5px;
+    margin-top: 12.5px;
+}
+
+.project-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    max-width: 375px;
+    margin-bottom: 20px;
+    background-color: indianred;
+    border-radius: 10px;
+}
+
+.project-1:hover{
+    background-color: hwb(41 34% 13%);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 25px oklab(87.58399999999999% -0.08987 0.12333);
 }
 
 
