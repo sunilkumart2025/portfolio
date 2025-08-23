@@ -1,13 +1,6 @@
 @media (min-width: 768px) {
-      .header {
-        font-size: 25px;
-      }
-      .project-1{
-        min-width: 450px;
-      }
-      .tech-icons{
-        min-width:425px;
-      }
+      
+
     }
 
 
@@ -30,9 +23,20 @@
     margin-left: 25px;
 }
 
+.nav-links{
+    display: flex;
+    margin-left: auto;
+    margin-right: 25px;
+    gap: 20px;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color:#fefefd;
+}
+
 .kumar{
     color: hsl(60, 100%, 50%);
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 .landing{
@@ -126,6 +130,11 @@
     border: 2px solid #9929fb;
 }
 
+.skill-head{
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+}
 
 .skills-icons-container{
     display: flex;
@@ -144,8 +153,8 @@
     padding: 0;
     margin: 0;
     background-color: hwb(0 80% 19%);
-    width: 155px;
-    height: 125px;
+    width: 200px;
+    height: 155px;
     border-radius: 15px;
 }
 
@@ -172,17 +181,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 60px;
     margin: 20px;
 }
 
+.project-head{
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    margin-top: 20px;
+}
+
 .tech-icons{
-    width: auto;
-    max-width: 350px;;
     align-items: center;
     border-radius: 25px;
     margin-left: 12.5px;
     margin-top: 12.5px;
+    height: auto;
+    width: 95%;
 }
 
 .project-1{
@@ -190,11 +205,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 8px;
-    width: auto;
-    max-width: 375px;
     margin-bottom: 20px;
     background-color: #d67575;
     border-radius: 10px;
+    width: 50%;
 }
 
 .project-1:hover{
@@ -263,7 +277,15 @@
 
 
 
-
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
 
 .footer{
     display: flex;
@@ -272,12 +294,13 @@
     background-color: rgb(239, 234, 227);
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom:5px;
     padding-top: 20px;
 }
 
 .social-media{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -287,13 +310,15 @@
 
 .rights{
     display: flex;
-    margin-left: auto;
-    flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .social-media-icons{
     height: 25px;
     margin-left: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .social-media-icons:hover{
