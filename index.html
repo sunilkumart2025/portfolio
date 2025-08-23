@@ -4,23 +4,37 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
         <title>My Web Page</title>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-        // Google Material Symbols
-        // Project 1 Source Button
+        <!--  Google Material Symbols  -->
+        <!-- Project 1 Source Button -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" />
-        // PROJECT 1 CONTRIBUTE BUTTON
+        <!--Project 1 Source Button -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
     </head>
     <body>
         <div class="header">
             <div>
-                <h1 class="heading">Sunil<spam class="kumar">Kumar</spam></h1>
+                <h1 class="heading">S<spam class="kumar">K</spam></h1>
             </div>
-            <div>
-
+            <div class="nav-links">
+                <div >
+                    <a style="color:aliceblue;
+                    text-decoration: none;" href="#about-me">About Me</a>
+                </div>
+                <div>
+                    <a style="color:aliceblue;
+                    text-decoration: none;" href="#skills">Skills</a>
+                </div>
+                <div>
+                    <a style="color:aliceblue;
+                    text-decoration: none;" href="#projects">Projects</a>
+                </div>
+                <div>
+                    <a style="color:aliceblue;
+                    text-decoration: none;" href="#contact">Contact</a>
+                </div>
             </div>
         </div>
         
@@ -53,7 +67,7 @@
 
         <div>
             <div>
-                <h2 class="about-me">About Me</h2>
+                <h2 id="about-me" class="about-me">About Me</h2>
             </div>
             <div>
                 <h3>Hi, I’m Sunilkumar 👋</h3>
@@ -75,9 +89,9 @@
 
 
 
-        <div>
+        <div id="skills">
             <div>
-                <h2>Skills & Technologies</h2>
+                <h2  class="skill-head">Skills & Technologies</h2>
             </div>
             <div class="skills-icons-container">
                 <div class="skills-icons-div">
@@ -103,12 +117,12 @@
             </div>
         </div>
 
-        <div class="projects-container">
+        <div id="projects" class="projects-container">
             <div>
-                <H2>Technologies working with..</H2>
+                <h2 class="project-head">Technologies working with..</h2>
             </div>
             <div class="project-1">
-                <div>
+                <div class="project-1-banner">
                     <img class="tech-icons" src="images/srm.jpg" alt="SRM Study Hub">
                 </div>
                 <div style="padding:0;
@@ -133,23 +147,25 @@
             </div>
         </div>
 
-        <div>
-            <h3>Contact</h3>
-            <p>Interested in collaborating or working together, let's discuss...</p>
+        <div id="contact" >
+            <h3>Get In Touch</h3>
+            <p>I'm always open to discussing new opportunities and interesting projects.</p>
         </div>
         <div class="footer">
             <div class="social-media">
+                <div class="rights">
+                    <p style="padding:0;
+                    margin:0;
+                    margin-right: 15px;">Made By Sunilkumar</p>
+                    <p style="padding:0;
+                    margin:0;">© 2025 All rights reserved</p>
+                </div>
                 <div>
                     <a href="https://github.com/sunilkumart2025"><img class="social-media-icons" src="icons/github.png" alt="GitHub"></a>
                     <a href="https://www.linkedin.com/in/sunilkumar2025/"><img class="social-media-icons" src="icons/linkedin.png" alt="LinkedIn"></a>
                     <a href="https://www.instagram.com/_.sunil._25?igsh=dTh5ZHJ0ZWRoMWN5"><img class="social-media-icons" src="icons/instagram.png" alt="Instagram"></a>
                 </div>
-                <div class="rights">
-                    <p style="padding:0;
-                    margin:0;">Made By Sunilkumar</p>
-                    <p style="padding:0;
-                    margin:0;">© 2023 All rights reserved</p>
-                </div>
+                
             </div>
         </div>
     </body>
