@@ -1,11 +1,42 @@
-function sayhello() {
-    window.location.href = "mailto:skysunil2025@gmail.com";
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-function project_1_source() {
-    window.location.href = "https://srm-gamma.vercel.app/";
-}
+    if (menuButton && navLinks) {
+        menuButton.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("is-open");
+            menuButton.setAttribute("aria-expanded", String(isOpen));
+        });
 
-function project_1_contribute() {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScLb8eugI6UKjO-g2Fchrjiwf2Jm0cneVyKT-6Ee3edxsXXgQ/viewform?usp=header";
-}
+        navLinks.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("is-open");
+                menuButton.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
+    const revealItems = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window)) {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.14,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+});
