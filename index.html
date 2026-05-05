@@ -1,172 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-        <title>My Web Page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-        <!--  Google Material Symbols  -->
-        <!-- Project 1 Source Button -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" />
-        <!--Project 1 Source Button -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
-    </head>
-    <body>
-        <div class="header">
-            <div>
-                <h1 class="heading">S<spam class="kumar">K</spam></h1>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunilkumar - Frontend Developer and React learner building responsive web applications and clean user interfaces.">
+    <title>Sunilkumar | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Sunilkumar home">Sunilkumar</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
-                <div >
-                    <a style="color:aliceblue;
-                    text-decoration: none;" href="#about-me">About Me</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a class="nav-cta" href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Frontend Developer | React Learner</p>
+                <h1>Frontend Developer focused on building clean, responsive and usable web applications.</h1>
+                <p class="hero-text">Currently learning React and actively building real-world projects to improve performance, usability and code quality.</p>
+                <p class="hero-note">I focus on building simple, clean and usable interfaces, not just designs, but working products.</p>
+                <div class="hero-actions" aria-label="Primary actions">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn secondary" href="#contact">Contact Me</a>
+                    <a class="btn ghost" href="Sunilkumar_Resume.pdf" download>Download Resume</a>
                 </div>
+            </div>
+            <aside class="profile-card reveal" aria-label="Profile summary">
+                <img src="images/photo.jpeg" alt="Sunilkumar profile photo">
                 <div>
-                    <a style="color:aliceblue;
-                    text-decoration: none;" href="#skills">Skills</a>
+                    <p class="card-label">Open to internships</p>
+                    <h2>Sunilkumar</h2>
+                    <p>2nd-year B.Tech student at SRM University with a growing frontend portfolio and a strong focus on clean, practical UI.</p>
                 </div>
-                <div>
-                    <a style="color:aliceblue;
-                    text-decoration: none;" href="#projects">Projects</a>
+                <div class="profile-stats">
+                    <span><strong>8.76</strong> CGPA</span>
+                    <span><strong>2024-28</strong> B.Tech</span>
                 </div>
-                <div>
-                    <a style="color:aliceblue;
-                    text-decoration: none;" href="#contact">Contact</a>
-                </div>
+            </aside>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">About Me</p>
+                <h2>Curious, consistent, and focused on frontend craft.</h2>
             </div>
-        </div>
-        
-
-
-        <div class="landing">
-
-            <div class="profile-details">
-                <div class="greeting">
-                    <h3 style="padding: 0;
-                    margin: 0;">Hey I'm</h3>
-                </div>
-                <div class="name">
-                    <h3 style="padding: 0;
-                    margin: 0;">Sunilkumar</h3>
-                </div>
-                <div class="field-of-study">
-                    <h2 style="padding: 0;
-                    margin: 0;">Web Developer</h2>
-                </div>
-                <div>
-                    <button href="mailto:skysunil2025@gmail.com" class="sayhello" onclick="sayhello()">Say Hello</button>
-                </div>
+            <div class="about-grid">
+                <p>I am a 2nd-year B.Tech student at SRM University with a strong interest in frontend development and modern web technologies.</p>
+                <p>I have a solid foundation in HTML, CSS, and JavaScript, and I am currently learning React to build more dynamic and scalable applications.</p>
+                <p>I enjoy solving problems through code and building applications that are both functional and visually clean.</p>
+                <p>I am actively looking for opportunities where I can gain real-world experience, contribute to meaningful projects, and improve my technical skills in a professional environment.</p>
             </div>
-            <div class="profile-picture-div">
-                <img class="profile-picture" src="images/photo.jpg" alt="Profile Picture" class="profile-picture">
-            </div>
-        </div>
+        </section>
 
-
-        <div>
+        <section class="section split-section reveal">
             <div>
-                <h2 id="about-me" class="about-me">About Me</h2>
-            </div>
-            <div>
-                <h3>Hi, I’m Sunilkumar 👋</h3>
-            </div>
-            <div>
-                <p>I’m a passionate B.Tech student at SRM Chennai with a strong interest in Web Development, Data Science, and Problem-Solving. I enjoy building projects that combine creativity and technology—whether it’s developing user-friendly websites, analyzing data for insights, or exploring automation to make life simpler.</p>
-                <p>💡 I believe in continuous learning and love experimenting with new technologies. Over time, I’ve built skills in HTML, CSS, JavaScript, Python, and SEO, and I’m also exploring full-stack development and freelancing opportunities.</p>
-                <p>🌱 Beyond tech, I’m curious, adaptable, and driven by the idea of creating solutions that can make a real impact.</p>
-            </div>
-            <div>
-                <h3>📌 My goals:</h3>
-                <ul>
-                    <li>Grow as a full-stack developer 🚀</li>
-                    <li>Contribute to open-source projects 💻</li>
-                    <li>Build meaningful digital products 🌍</li>
+                <p class="eyebrow">What Makes Me Different</p>
+                <h2>I build with execution in mind.</h2>
+                <ul class="clean-list">
+                    <li>I focus on building working products, not just designs</li>
+                    <li>I care about usability and clean UI</li>
+                    <li>I continuously improve my projects instead of leaving them unfinished</li>
+                    <li>I learn by building, not just watching tutorials</li>
                 </ul>
             </div>
-        </div>
-
-
-
-        <div id="skills">
             <div>
-                <h2  class="skill-head">Skills & Technologies</h2>
+                <p class="eyebrow">How I Work</p>
+                <h2>Clear thinking behind the interface.</h2>
+                <ul class="clean-list">
+                    <li>I break problems into smaller parts and solve step-by-step</li>
+                    <li>I focus on writing clean and readable code</li>
+                    <li>I test UI across devices for responsiveness</li>
+                    <li>I improve my projects based on feedback</li>
+                </ul>
             </div>
-            <div class="skills-icons-container">
-                <div class="skills-icons-div">
-                    <img class="skills-icons" src="icons/html5.png" alt="HTML">
-                    <h3 class="skill-name">HTML</h3>
-                </div>
-                <div class="skills-icons-div">
-                    <img class="skills-icons" src="icons/css3.png" alt="CSS">
-                    <h3 class="skill-name">CSS</h3>
-                </div>
-                <div class="skills-icons-div">
-                    <img class="skills-icons" src="icons/c.png" alt="CSS">
-                    <h3 class="skill-name">C</h3>
-                </div>
-                <div class="skills-icons-div">
-                    <img class="skills-icons" src="icons/github.png" alt="CSS">
-                    <h3 class="skill-name">GitHub</h3>
-                </div>
-                <div class="skills-icons-div">
-                    <img class="skills-icons" src="icons/js.png" alt="CSS">
-                    <h3 class="skill-name">JavaScript</h3>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <div id="projects" class="projects-container">
-            <div>
-                <h2 class="project-head">Technologies working with..</h2>
+        <section class="section feature-band reveal" aria-label="What I can do">
+            <div class="section-heading compact">
+                <p class="eyebrow">What I Can Do</p>
+                <h2>Reliable frontend work for practical web products.</h2>
             </div>
-            <div class="project-1">
-                <div class="project-1-banner">
-                    <img class="tech-icons" src="images/srm.jpg" alt="SRM Study Hub">
-                </div>
-                <div style="padding:0;
-                margin:0;
-                display: flex;
-                flex-direction: column;
-                margin-left: 13px;">
-                    <h3 style="padding:0;
-                    margin: 0;">SRM Study Hub</h3>
-                    <p style="padding: 0;
-                    margin: 0;
-                    ">The SRM Study Hub is a platform for developers to connect, learn new skills, and contribute to impactful projects. It's a vibrant community for like-minded individuals to grow and collaborate.</p>
-                </div>
-                <div class="project-1-buttons">
-                    <button class="project-1-contribute-button" onclick="project_1_contribute()">Contribute <span class="material-symbols-outlined">login</span></button>
-                    <button class="project-1-souce-button" onclick="project_1_source()">Open the live Site <span class="material-symbols-outlined">east</span></button>
-                    
-                </div>
+            <div class="capability-grid">
+                <article>Develop responsive websites that work across all devices</article>
+                <article>Build clean and modern user interfaces</article>
+                <article>Implement interactive features using JavaScript</article>
+                <article>Create structured and maintainable code</article>
+                <article>Debug and improve existing UI/UX issues</article>
+                <article>Work with Git and GitHub for version control</article>
             </div>
-            <div>
+        </section>
 
+        <section id="skills" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Tech Stack</p>
+                <h2>Tools and concepts I use to build web interfaces.</h2>
             </div>
-        </div>
+            <div class="skill-columns">
+                <div class="skill-panel">
+                    <h3>Frontend</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React Learning</span>
+                    </div>
+                </div>
+                <div class="skill-panel">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Vercel</span>
+                    </div>
+                </div>
+                <div class="skill-panel">
+                    <h3>Concepts</h3>
+                    <div class="tags">
+                        <span>Responsive Design</span>
+                        <span>DOM Manipulation</span>
+                        <span>Basic UI/UX Principles</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div id="contact" >
-            <h3>Get In Touch</h3>
-            <p>I'm always open to discussing new opportunities and interesting projects.</p>
-        </div>
-        <div class="footer">
-            <div class="social-media">
-                <div class="rights">
-                    <p style="padding:0;
-                    margin:0;
-                    margin-right: 15px;">Made By Sunilkumar</p>
-                    <p style="padding:0;
-                    margin:0;">© 2025 All rights reserved</p>
+        <section id="projects" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Hands-on projects built around usability and structure.</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-top">
+                        <p class="project-type">Billing Website</p>
+                        <h3>Invoice and Transaction System</h3>
+                        <p>A web-based billing system designed to generate invoices and manage transactions efficiently.</p>
+                    </div>
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Item entry and dynamic total calculation</li>
+                            <li>Invoice generation system</li>
+                            <li>Input validation to prevent errors</li>
+                            <li>Fully responsive layout</li>
+                        </ul>
+                    </div>
+                    <div class="project-details">
+                        <h4>What I Learned</h4>
+                        <p>Handling user input, validation, UI structure, usability, and layout improvements.</p>
+                    </div>
+                    <div class="project-meta">
+                        <p><strong>My Role:</strong> Designed UI and implemented functionality using JavaScript.</p>
+                        <p><strong>Challenges:</strong> Handling user input and ensuring responsive layout.</p>
+                        <p><strong>Outcome:</strong> Built a working product with clean UI and functional features.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://srm-gamma.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                        <a href="https://github.com/sunilkumart2025" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card accent">
+                    <div class="project-top">
+                        <p class="project-type">Nestify Web Application</p>
+                        <h3>Responsive UI Application</h3>
+                        <p>A responsive web application with a focus on modern UI design and smooth user experience.</p>
+                    </div>
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Interactive UI elements</li>
+                            <li>Mobile-friendly responsive layout</li>
+                            <li>Clean and structured design</li>
+                            <li>Optimized performance</li>
+                        </ul>
+                    </div>
+                    <div class="project-details">
+                        <h4>What I Learned</h4>
+                        <p>Designing consistent UI, improving responsiveness, and enhancing user experience.</p>
+                    </div>
+                    <div class="project-meta">
+                        <p><strong>My Role:</strong> Designed UI and implemented functionality using JavaScript.</p>
+                        <p><strong>Challenges:</strong> Maintaining responsive structure and smooth interaction across devices.</p>
+                        <p><strong>Outcome:</strong> Built a polished web application with better usability and modern layout structure.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://srm-gamma.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                        <a href="https://github.com/sunilkumart2025" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="impact-grid">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Project Impact</p>
+                    <h2>Growing through real implementation.</h2>
+                </div>
+                <div class="impact-list">
+                    <p>Built multiple responsive web applications</p>
+                    <p>Improved UI design and usability skills</p>
+                    <p>Gained hands-on experience with real project structure</p>
+                    <p>Developed problem-solving ability through implementation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="split-section">
+                <div>
+                    <p class="eyebrow">Project Status</p>
+                    <h2>Still growing, not standing still.</h2>
+                    <ul class="clean-list">
+                        <li>Actively improving my projects</li>
+                        <li>Adding new features and better UI</li>
+                        <li>Planning to build full-stack applications</li>
+                    </ul>
                 </div>
                 <div>
-                    <a href="https://github.com/sunilkumart2025"><img class="social-media-icons" src="icons/github.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/sunilkumar2025/"><img class="social-media-icons" src="icons/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/_.sunil._25?igsh=dTh5ZHJ0ZWRoMWN5"><img class="social-media-icons" src="icons/instagram.png" alt="Instagram"></a>
+                    <p class="eyebrow">Project Improvements</p>
+                    <h2>Next upgrades already in motion.</h2>
+                    <ul class="clean-list">
+                        <li>Improving UI consistency and responsiveness</li>
+                        <li>Planning to convert projects into full-stack applications</li>
+                        <li>Adding better structure and reusable components</li>
+                    </ul>
                 </div>
-                
             </div>
-        </div>
-    </body>
+        </section>
+
+        <section class="section split-section reveal">
+            <div>
+                <p class="eyebrow">Currently Learning</p>
+                <h2>Next skills in progress.</h2>
+                <ul class="clean-list">
+                    <li>React.js for building dynamic applications</li>
+                    <li>Advanced JavaScript ES6+</li>
+                    <li>UI/UX design principles</li>
+                    <li>Basic backend concepts</li>
+                </ul>
+            </div>
+            <div>
+                <p class="eyebrow">Goals</p>
+                <h2>Where I am heading.</h2>
+                <ul class="clean-list">
+                    <li>Become a skilled full-stack developer</li>
+                    <li>Build scalable and impactful web applications</li>
+                    <li>Gain industry experience through internships</li>
+                    <li>Contribute to real-world and open-source projects</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section why-hire reveal">
+            <div class="section-heading compact">
+                <p class="eyebrow">Why Hire Me</p>
+                <h2>Strong fundamentals with a professional growth mindset.</h2>
+            </div>
+            <div class="hire-grid">
+                <span>Strong fundamentals in frontend development</span>
+                <span>Focus on clean and maintainable code</span>
+                <span>Quick learner with strong adaptability</span>
+                <span>Passionate about building real-world applications</span>
+                <span>Good understanding of responsive design</span>
+                <span>Ready to contribute and grow in a team environment</span>
+            </div>
+        </section>
+
+        <section id="education" class="section reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Education</p>
+                <h2>Academic background.</h2>
+            </div>
+            <div class="education-list">
+                <article>
+                    <div>
+                        <h3>B.Tech - SRM University</h3>
+                        <p>2024 - 2028</p>
+                    </div>
+                    <strong>CGPA: 8.76</strong>
+                </article>
+                <article>
+                    <div>
+                        <h3>Higher Secondary - Senthil Public School</h3>
+                        <p>Completed higher secondary education</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section reveal">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Open to internship opportunities and collaborations.</h2>
+                <p>Feel free to reach out for opportunities, project discussions, or frontend development collaborations.</p>
+                <div class="availability">
+                    <span>Available for Internship (Frontend / Web Development)</span>
+                    <span>Ready to join from May 23</span>
+                </div>
+            </div>
+            <div class="contact-actions">
+                <a class="btn primary" href="mailto:skysunil2025@gmail.com">skysunil2025@gmail.com</a>
+                <a class="btn secondary" href="https://github.com/sunilkumart2025" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn secondary" href="https://linkedin.com/in/sunilkumart2025" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </section>
+
+        <section class="section closing-note reveal">
+            <div class="note-card">
+                <p class="eyebrow">Note</p>
+                <p>I am actively improving my projects and skills. I believe in learning by building and continuously refining my work.</p>
+                <p>Looking forward to contributing to real-world projects and growing as a developer.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made by Sunilkumar</p>
+        <p>&copy; 2026 All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
